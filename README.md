@@ -1,2 +1,2 @@
 # Material-Extra-Fundamentos-Web
-Repo criado para os exercios extras propostos HTML, CSS e JS 
+Repo criado para os exercicios extras propostos HTML, CSS e JS 
