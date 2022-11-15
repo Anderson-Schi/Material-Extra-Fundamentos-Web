@@ -12,7 +12,7 @@ console.log(`O valor a ser pago por consumir ${quilowatts} quilowatt-hora vai se
 
 // b) Altere o programa para receber mais um valor: a porcentagem de desconto. Calcule e mostre o valor a ser pago pela mesma residência acima considerando 15% de desconto
 quilowatts = 280;
-desconto = 0.85
+desconto = 0.85;
 const valorEnergia = (quilowatts/quiloWattsHora) * desconto;
 console.log(`O valor a ser pago por consumir ${quilowatts} quilowatt-hora vai ser de R$${valorEnergia.toFixed(2)} com 15% de desconto `);
 
