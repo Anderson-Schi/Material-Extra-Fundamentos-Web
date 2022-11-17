@@ -41,13 +41,43 @@ console.log(`100mi equivalem a ${miToM(100).toFixed(1)}m\n`);
 // 50ft equivalem a X m
 
 // d(m) = d(ft) × 0.3048
-const ftToM = (ft,constante) => {
+/*  const ftToM = (ft,constante) => {
     constante = 0.3048;
-    return ft * constante
+    return ft * constante;
 };
-console.log(`50ft equivalem a ${ftToM(50).toFixed(2)}m\n`);
+console.log(`50ft equivalem a ${ftToM(50).toFixed(2)}m\n`);  */
 
+// e) Procure uma forma de converter galão (gal) para litro (l) e escreva um programa que converta 103.56gal para litro. Imprima  a resposta no console da seguinte forma: 
+// 103.56gal equivalem a X l
+const galToLitro = (galao, constante) => {
+    constante = 3.785411784 ;
+    return galao * constante;
+};
+console.log(`103.56gal equivalem a ${galToLitro(103.56).toFixed(2)}l\n`);
 
+// f) Procure uma forma de converter xícara (xic) para litro (l) e escreva um programa que converta 450xic para litro. Imprima  a resposta no console da seguinte forma: 
+// 450 xic equivalem a X l
+// 1 xc × 0.24 = 0.24 l
+/* const xcToLt = (xc, constante) => {
+    constante = 0.24
+    return xc * constante
+};
+console.log(`450 xic equivalem a ${xcToLt(450).toFixed(2)}l`); */
 
+// g) Escolha ao menos um dos itens anteriores e modifique o programa para que ele peça ao usuário o valor da unidade original antes de converter
+
+const xc = Number(prompt("Conversor de xicara(xic) para Litros (l).\n Insira o valor de xic: "));
+const constXic = 0.24;
+const conversor = xc * constXic;
+
+console.log(`Convertendo ${xc}xic em litros: ${conversor}l`);
+
+ let ft1 = Number(prompt("Conversor de pes(ft) para Litros (l).\n Insira o valor de ft: "))
+const constante = 0.3048;
+
+const ftToM = () => {
+    return ft1 * constante;
+};
+console.log(`${ft1}ft equivalem a ${ftToM().toFixed(2)}m\n`); 
 
 
